@@ -3,6 +3,7 @@
     "version": "1.0",
     "description": "Hide the sell button in Nordnet trading platform - for those who sell too early.",
     "permissions": [
+      "declarativeContent",
       "storage",
       "https://*.nordnet.fi/"
     ],

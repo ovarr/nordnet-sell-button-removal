@@ -1,18 +1,19 @@
-chrome.browserAction.onClicked.addListener((tab) => {
+chrome.browserAction.onClicked.addListener(() => {
   chrome.storage.sync.get('isExtensionActive', storage => {
     chrome.storage.sync.set({
       isExtensionActive: !storage.isExtensionActive,
     })
-
-    setIcon(storage.isExtensionActive)
   })
 })
 
-const setIcon = (isExtensionActive) => {
-  console.log('Toggle icon', isExtensionActive)
-  
-  const path = isExtensionActive ? "icons/active.png" : "icons/icon.png"
+chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
+  setIcon(request.active, sender.tab.id)
+})
+
+function setIcon(isActive, tabId) {
+  const path = isActive ? "icons/active.png" : "icons/icon.png"
   chrome.browserAction.setIcon({
-    path: path
+    path, 
+    tabId
   })
 }
