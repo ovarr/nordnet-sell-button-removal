@@ -4,11 +4,12 @@ Chrome Extension: Hide the sell button in Nordnet trading platform
 This extension is for removing the sell button in Nordnet (nordnet.fi), mainly intented as a joke of sorts but it'll work if you really need it.
 
 ### Install
-1. Open the Extension Management page by navigating to chrome://extensions.
+1. Copy this repository to your computer.
+2. Open the Extension Management page by navigating to chrome://extensions.
   - The Extension Management page can also be opened by clicking on the Chrome menu, hovering over More Tools then selecting Extensions.
   
-2. Enable Developer Mode by clicking the toggle switch next to Developer mode.
-3. Click the "LOAD UNPACKED" button and select the extension directory.
+3. Enable Developer Mode by clicking the toggle switch next to Developer mode.
+4. Click the "LOAD UNPACKED" button and select the extension directory.
 <img src="https://i.postimg.cc/5NdvyDNG/load-chrome-extension.jpg" width="500">
 
 
